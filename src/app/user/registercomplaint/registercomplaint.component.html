@@ -1,0 +1,61 @@
+<!-- <h1 style="text-align: center;">Register your complaint here</h1>
+<br>
+<div class="container mt-3">
+</div>
+<div class="container">
+        <form [formGroup]='ComplaintForm'>
+                <div class="row">
+                        <div class="col-lg-6">
+                                <h2>Select your Product</h2>
+                        </div>
+                        <div class="col-lg-6">
+                                <h2>Your Complaint</h2>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-lg-6">
+                                <select class="form-control" formControlName="Productname">
+                                        <option>--select your product--</option>
+                                        <option *ngFor="let item of Dataarray let i=index"  class="form-control">
+                                                {{item.productName}}</option>
+                                </select>
+                        </div>
+                        <div class="col-lg-6">
+                                <input type="text" formControlName="Complaints" class="form-control" />
+                        </div>
+                </div>
+                <br>
+                <div class="row">
+                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6">
+                                <button type="submit" class="btn btn-danger" (click)="onsubmit()">Complaint</button>
+                        </div>
+                </div>
+        </form>
+</div> -->
+
+
+
+<div class="head"><h1>NEW COMPLAINT</h1></div>
+
+<div class="box">
+
+    <form action="" [formGroup]="ComplaintForm">
+
+        <select class="form-control" formControlName="Productname">
+
+            <option>--select your product--</option>
+
+            <option *ngFor="let item of Dataarray let i=index"  class="form-control">
+
+                    {{item.productName}}</option>
+
+         </select>
+
+        <input type="text" id="description" placeholder="Your complaint" formControlName="Complaints">
+
+        <button (click)="onsubmit()">Register</button>
+
+    </form>
+
+</div>

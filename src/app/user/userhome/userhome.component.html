@@ -1,0 +1,52 @@
+<!-- <nav class="navbar navbar-expand-sm bg-danger navbar-danger">
+    <div class="container-fluid">
+     
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/userhome']">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/userhome/productview']">View Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/userhome/registercomplaint']">Register Complaint</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/userhome/viewcomplaintstatus']">Complaint Status</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/Home/Login']">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav> -->
+
+
+<div class="wraper">
+
+    <div class="section" id="home">
+
+      <header id="header">
+
+        <a href="#" class="logo">GRIEVANCE PORTAL</a>
+
+        <div class="menu">
+
+          <a href="#home" class="" [routerLink]="['/userhome']">Home</a>
+
+          <a href="#aboutme" [routerLink]="['/userhome/productview']">View Products</a>
+
+          <a href="#service" [routerLink]="['/userhome/registercomplaint']">Register Complaint</a>
+
+          <a href="#gallery" [routerLink]="['/userhome/viewcomplaintstatus']">View Complaints</a>
+
+          <a href="#contactus" [routerLink]="['/Home/Login']" >Log Out</a>
+
+        </div>
+
+      </header>
+
+    </div>
+
+
+<router-outlet></router-outlet>

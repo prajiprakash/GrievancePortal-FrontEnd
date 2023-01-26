@@ -1,0 +1,56 @@
+<h1 style="text-align: center;">Register your complaint</h1>
+
+<div class="container">
+    <h1 style="padding-top: 25px;"></h1>
+    <br>
+    <div class="row">
+        <form [formGroup]="AddComplaintForm">
+          
+            <div class="col-lg-4"></div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h5>Product Name</h5>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="hidden" formControlName='productId'>
+                        <input type="text" class="form-control" formControlName='ProductName' />
+                    </div>
+                </div>
+                <br>
+
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h5>Description</h5>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control" formControlName='Description' />
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h5>Your Complaint</h5>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control" formControlName='Complaint' />
+                    </div>
+                </div>
+
+
+                <br>
+                <div class="row">
+                    <div class="col-lg-4">
+
+                    </div>
+                    <div class="col-lg-6">
+                        <button type="submit" class="btn btn-danger" (click)="onsumbit()" rounded="true">Complaint</button>
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

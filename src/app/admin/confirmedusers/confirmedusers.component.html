@@ -1,0 +1,85 @@
+<!-- <h1 style="text-align: center;">Confirmed Users</h1>
+<div class="container mt-3">
+    <h1>User Details</h1><br>
+    <table class="table">
+        <thead>
+            <th> Name </th>
+            <th> Place </th>
+            <th> Email </th>
+            <th>Phone</th>
+            <th>Username</th>
+            
+            <th>Status</th>
+            <th>Remove User</th>
+        </thead>
+        <tr *ngFor="let item of Dataarray let i=index" class="table-primary">
+            
+            <td> {{item.name}}</td>
+            <td> {{item.place}} </td>
+            <td>{{item.email}}</td>
+            <td>{{item.phone}}</td>
+            <td>{{item.username}}</td>
+           
+            <td>{{item.status}}</td>
+            <td><button class="btn btn-danger" (click)="remove(item.loginId,item.name,item.place,item.email,item.phone,item.username,item.password)">Remove</button></td>
+           
+        </tr>
+    </table>
+</div> -->
+
+
+
+
+<div class="head"><h1>ALL USERS</h1></div>
+
+<div class="box">
+
+    <table>
+
+      <thead>
+
+        <tr>
+
+            <th> Name </th>
+
+            <th> Place </th>
+
+            <th>Email</th>
+
+            <th>Phone</th>
+
+            <th>Username</th>
+
+            <th>Status</th>
+
+            <th>Remove User</th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr *ngFor="let item of Dataarray let i=index" class="table-primary">
+
+            <td> {{item.name}}</td>
+
+            <td> {{item.place}} </td>
+
+            <td>{{item.email}}</td>
+
+            <td>{{item.phone}}</td>
+
+            <td>{{item.username}}</td>
+
+            <td>{{item.status}}</td>
+
+            <td><button class="btn btn-danger" (click)="remove(item.loginId,item.name,item.place,item.email,item.phone,item.username,item.password)">Remove</button></td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>

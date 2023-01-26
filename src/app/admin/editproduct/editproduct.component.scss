@@ -1,0 +1,105 @@
+.box {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin: 48% auto 0 auto;
+
+    width: 500px;
+
+}
+
+
+
+input {
+
+    width: 100%;
+
+    border: 1px solid #ccc;
+
+    background: #FFF;
+
+    margin: 0 0 5px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+}
+
+
+
+
+
+button {
+
+    cursor: pointer;
+
+    border: none;
+
+    color: #FFF;
+
+    margin: 0 0 5px;
+
+    padding: 10px;
+
+    font-size: 15px;
+
+    border-radius: 10px;
+
+   
+
+   
+
+}
+
+
+
+.edit {
+
+   
+
+    background: #4CAF50;
+
+    width: 48%;
+
+}
+
+
+
+.delete {
+
+    margin-left: 4%;
+
+    background: #d82f4e;
+
+    width: 48%;
+
+   
+
+}
+
+
+
+.head{
+
+    width: 1200px;
+
+    color: #FFF;
+
+    position: relative;
+
+    margin: -45% 35%;
+
+    font-size: medium;
+
+  }
+
+  h1{
+
+    letter-spacing: 20px;
+
+    font-size: 34px;
+
+  }

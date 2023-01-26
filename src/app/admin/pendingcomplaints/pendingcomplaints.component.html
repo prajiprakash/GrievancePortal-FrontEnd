@@ -1,0 +1,89 @@
+<!-- <h1 style="text-align: center;">Pending Complaints</h1>
+<div class="container mt-3">
+    <h1>Complaint Details</h1><br>
+    <form>
+        <table class="table">
+            <thead>
+                <th> Name </th>
+                <th> Email </th>
+                <th> Phone </th>
+                <th>Product Name</th>
+                <th>Complaint</th>
+
+                <th>Complaint Status</th>
+                <th>Change Complaint status to</th>
+
+            </thead>
+            <tr *ngFor="let item of Dataarray" class="table-primary">
+                <td>{{item.name}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.phone}}</td>
+                <td>{{item.productname}}</td>
+                <td>{{item.complaints}}</td>
+                <td>{{item.status}}</td>
+               
+
+                <td>
+                   <button class="btn btn-info" (click)="completed(item.complaintId,item.productname,item.complaints,item.loginId)">Completed</button>
+                </td>
+              
+               
+            </tr>
+        </table>
+    </form>
+</div> -->
+
+
+
+<div class="head"><h1>PENDING </h1></div>
+
+<div class="box">
+
+    <table>
+
+      <thead>
+
+        <tr>
+
+            <th> Name </th>
+
+            <th> Email </th>
+
+            <th>Phone</th>
+
+            <th>Product Name</th>
+
+            <th>Complaint</th>
+
+            <th>Complaint Status</th>
+
+            <th>Change Complaint Status </th>
+            
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr *ngFor="let item of Dataarray" class="table-primary">
+
+            <td>{{item.name}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.phone}}</td>
+                <td>{{item.productname}}</td>
+                <td>{{item.complaints}}</td>
+                <td>{{item.status}}</td>
+
+            <td>
+            <!-- <button class="btn btn-primary" (click)="pending(item.complaintId,item.productname,item.complaints,item.loginId)">Pending</button> &nbsp; -->
+            <button class="btn btn-success" (click)="completed(item.complaintId,item.productname,item.complaints,item.loginId)">Complete</button>
+            </td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>

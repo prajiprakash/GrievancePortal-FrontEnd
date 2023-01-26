@@ -1,0 +1,64 @@
+<!-- <h1 style="text-align: center;">Edit Product</h1>
+
+<div class="container">
+    <h1 style="padding-top: 25px;">Edit Product Details</h1>
+    <br>
+    <div class="row">
+        <form [formGroup]='EditProductForm'>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h5>Product Name</h5>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="hidden" formControlName='productId'>
+                        <input type="text" class="form-control" formControlName='ProductName'
+                           />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h5>Description</h5>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control" formControlName='Description'
+                             />
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4">
+
+                    </div>
+                    <div class="col-lg-6">
+                        <button type="submit" class="btn btn-danger" (click)="OnSubmit()" rounded="true">Edit Product</button>
+                        &nbsp;
+                        
+                        <button type="submit" class="btn btn-danger" (click)="Onsubmitdelete()" rounded="true">Delete Product</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div> -->
+
+
+
+<div class="head"><h1>EDIT PRODUCT</h1></div>
+
+<div class="box">
+
+    <form action="" [formGroup]="EditProductForm">
+
+        <input type="text" placeholder="Product Name"formControlName="ProductName">
+
+        <input type="text" placeholder="Description" formControlName="Description">
+
+        <button class="edit" (click)="OnSubmit()">Edit</button>
+
+        <button class="delete" (click)="Onsubmitdelete()">Delete</button>
+
+    </form>
+
+</div>

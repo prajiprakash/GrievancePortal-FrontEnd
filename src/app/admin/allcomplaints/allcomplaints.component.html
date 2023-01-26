@@ -1,0 +1,52 @@
+
+<div class="head">
+    <h1>ALL COMPLAINTS </h1>
+</div>
+
+<div class="box">
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th> Name </th>
+
+                <th> Email </th>
+
+                <th>Phone</th>
+
+                <th>Product Name</th>
+
+                <th>Complaint</th>
+
+                <th>Complaint Status</th>
+
+                <TH></TH>
+
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr *ngFor="let item of Dataarray" class="table-primary">
+
+                <td>{{item.name}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.phone}}</td>
+                <td>{{item.productname}}</td>
+                <td>{{item.complaints}}</td>
+                <td>{{item.status}}</td>
+                <TD></TD>
+
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>

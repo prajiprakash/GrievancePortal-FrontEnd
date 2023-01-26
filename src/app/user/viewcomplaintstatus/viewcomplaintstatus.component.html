@@ -1,0 +1,42 @@
+<!-- <h1 style="text-align: center;">My Complaint Status</h1>
+<div class="container mt-3">
+    <h1>My Complaints</h1><br>
+    <table class="table">
+        <thead>
+            <th> Product Name </th>
+            <th> Complaint </th>
+            <th>  Status </th>
+        </thead>
+        <tr *ngFor="let item of Dataarray" class="table-primary">
+            <td>{{item.productname}}</td>
+            <td>{{item.complaints}}</td>
+            <td>{{item.status}}</td>
+            </tr>
+    </table>
+</div>
+
+
+ -->
+
+
+
+ 
+<div class="head"><h1>COMPLAINTS </h1></div>
+<div class="box">
+    <table>
+      <thead>
+        <tr>
+            <th> Product Name </th>
+            <th> Complaint </th>
+            <th>  Status </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of Dataarray" class="table-primary">
+            <td>{{item.productname}}</td>
+            <td>{{item.complaints}}</td>
+            <td>{{item.status}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

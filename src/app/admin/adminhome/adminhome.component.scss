@@ -1,0 +1,318 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+
+
+.fa-2x {
+
+    font-size: 2em;
+
+}
+
+
+
+.fa {
+
+    position: relative;
+
+    display: table-cell;
+
+    width: 60px;
+
+    height: 36px;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    font-size: 20px;
+
+}
+
+
+
+
+.main-menu:hover,
+
+nav.main-menu.expanded {
+
+    width: 250px;
+
+    overflow: visible;
+
+}
+
+
+
+.main-menu {
+
+    background: #212121;
+
+    border-right: 1px solid #440044;
+
+    position: absolute;
+
+    top: 0;
+
+    bottom: 0;
+
+    height: 100%;
+
+    left: 0;
+
+    width: 60px;
+
+    overflow: hidden;
+
+    -webkit-transition: width .05s linear;
+
+    transition: width .05s linear;
+
+    -webkit-transform: translateZ(0) scale(1, 1);
+
+    transform: translateZ(0) scale(1, 1);
+
+    z-index: 1000;
+
+}
+
+
+
+.main-menu>ul {
+
+    margin: 7px 0;
+
+}
+
+
+
+.main-menu li {
+
+    position: relative;
+
+    display: block;
+
+    width: 250px;
+
+}
+
+
+
+.main-menu li>a {
+
+    position: relative;
+
+    display: table;
+
+    border-collapse: collapse;
+
+    border-spacing: 0;
+
+    color: #999;
+
+    font-family: arial;
+
+    font-size: 14px;
+
+    text-decoration: none;
+
+    -webkit-transform: translateZ(0) scale(1, 1);
+
+    transform: translateZ(0) scale(1, 1);
+
+    -webkit-transition: all .1s linear;
+
+    transition: all .1s linear;
+
+
+
+}
+
+
+
+.main-menu .nav-icon {
+
+    position: relative;
+
+    display: table-cell;
+
+    width: 60px;
+
+    height: 36px;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    font-size: 18px;
+
+}
+
+
+
+.main-menu .nav-text {
+
+    position: relative;
+
+    display: table-cell;
+
+    vertical-align: middle;
+
+    width: 190px;
+
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+
+
+.main-menu>ul.logout {
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+}
+
+
+
+.no-touch .scrollable.hover {
+
+    overflow-y: hidden;
+
+}
+
+
+
+.no-touch .scrollable.hover:hover {
+
+    overflow-y: auto;
+
+    overflow: visible;
+
+}
+
+
+
+a:hover,
+
+a:focus {
+
+    text-decoration: none;
+
+}
+
+
+
+nav {
+
+    -webkit-user-select: none;
+
+    -moz-user-select: none;
+
+    -ms-user-select: none;
+
+    -o-user-select: none;
+
+    user-select: none;
+
+}
+
+
+
+nav ul,
+
+nav li {
+
+    outline: 0;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+.main-menu li:hover>a,
+
+nav.main-menu li.active>a,
+
+.dropdown-menu>li>a:hover,
+
+.dropdown-menu>li>a:focus,
+
+.dropdown-menu>.active>a,
+
+.dropdown-menu>.active>a:hover,
+
+.dropdown-menu>.active>a:focus,
+
+.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+
+.dashboard-page nav.dashboard-menu ul li.active a {
+
+    color: #fff;
+
+    background-color: #330033;
+
+}
+
+
+
+.area {
+
+    float: left;
+
+    background: #e2e2e2;
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+
+
+@font-face {
+
+    font-family: 'Titillium Web';
+
+    font-style: normal;
+
+    font-weight: 300;
+
+    src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+
+}
+
+
+
+section {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #330033;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+
+
+//Dropdown

@@ -1,0 +1,106 @@
+.box {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin: 43% auto 0 auto;
+
+    width: 500px;
+
+}
+
+
+
+input {
+
+    width: 100%;
+
+    border: 1px solid #ccc;
+
+    background: #FFF;
+
+    margin: 0 0 15px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+}
+
+select{
+
+    width: 100%;
+
+    border: 1px solid #ccc;
+
+    background: #FFF;
+
+    margin: 0 0 15px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+}
+
+
+
+
+button {
+
+    cursor: pointer;
+
+    width: 100%;
+
+    border: none;
+
+    background: #2d2e2d;
+
+    color: #FFF;
+
+    margin: 0 0 5px;
+
+    padding: 10px;
+
+    font-size: 15px;
+
+    border-radius: 10px;
+
+}
+
+
+
+.head{
+
+    width: 1200px;
+
+    color: rgb(39, 38, 38);
+
+    position: relative;
+
+    margin: -40% 34%;
+
+    font-size: medium;
+
+  }
+
+  h1{
+
+    letter-spacing: 20px;
+
+    font-size: 30px;
+
+  }
+
+
+
+  button:hover{
+
+    background-color: rgb(99, 98, 98);
+
+    color: #f0eeee;
+
+    transition: background-color 0.2s ease-in;
+
+  }

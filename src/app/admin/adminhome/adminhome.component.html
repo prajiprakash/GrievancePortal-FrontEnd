@@ -1,0 +1,227 @@
+<!-- 
+<nav class="navbar navbar-expand-sm bg-danger navbar-danger">
+    <div class="container-fluid">
+      
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome']">Home |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome/productregister']">Register Product |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome/viewproduct']">View Products |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome/viewuser']">Confirm Users |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome/confirmedusers']">Confimed Users |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome/viewcomplaints']">View Complaints |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome/pendingcomplaints']">Pending Complaints |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/adminhome/completedcomplaints']">Completed Complaints |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/Home']">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav> -->
+
+
+<div class="area"></div>
+
+<nav class="main-menu">
+
+
+
+
+    <ul>
+
+        <li>
+
+            <a [routerLink]="['/adminhome']">
+
+                <i class="fa fa-home fa-2x"></i>
+
+                <span class="nav-text">
+
+                    Dashboard
+
+                </span>
+
+            </a>
+
+
+
+        </li>
+
+        <li>
+
+            <a href="#" [routerLink]="['/adminhome/productregister']">
+
+                <i class="fa fa-truck"></i>
+
+                <span class="nav-text">
+
+                    Register Product
+
+                </span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#" [routerLink]="['/adminhome/viewproduct']">
+
+                <i class="fa fa-truck"></i>
+
+                <span class="nav-text">
+
+                    View Product
+
+                </span>
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="#" [routerLink]="['/adminhome/viewuser']">
+
+                <i class="fa fa-user"></i>
+
+                <span class="nav-text">
+
+                    Confirm Users
+
+                </span>
+
+            </a>
+
+        </li>
+
+        <li class="has-subnav">
+
+            <a [routerLink]="['/adminhome/confirmedusers']">
+
+                <i class="fa fa-user"></i>
+
+                <span class="nav-text">
+
+                     Users
+
+                </span>
+
+            </a>
+
+
+
+        </li>
+
+        <li class="has-subnav">
+
+            <a [routerLink]="['/adminhome/viewcomplaints']">
+
+                <i class="fa fa-folder-open fa-2x"></i>
+
+                <span class="nav-text">
+
+                    View Complaints
+
+                </span>
+
+            </a>
+
+        </li>
+
+        <li class="has-subnav">
+
+            <a [routerLink]="['/adminhome/pendingcomplaints']">
+
+                <i class="fa fa-folder-open fa-2x"></i>
+
+                <span class="nav-text">
+
+                    Pending Complaints
+
+                </span>
+
+            </a>
+
+        </li>
+
+        <li class="has-subnav">
+
+            <a [routerLink]="['/adminhome/completedcomplaints']">
+
+                <i class="fa fa-folder-open fa-2x"></i>
+
+                <span class="nav-text">
+
+                    Completed Complaints
+
+                </span>
+
+            </a>
+
+        </li>
+
+        <li class="has-subnav">
+
+            <a [routerLink]="['/adminhome/allcomplaints']">
+
+                <i class="fa fa-folder-open fa-2x"></i>
+
+                <span class="nav-text">
+
+                    Show all Complaints
+
+                </span>
+
+            </a>
+
+        </li>
+
+
+
+    </ul>
+
+    <ul class="logout">
+
+        <li>
+
+            <a href="#" [routerLink]="['/Home/Login']">
+
+                <i class="fa fa-power-off fa-2x"></i>
+
+                <span class="nav-text">
+
+                    Logout
+
+                </span>
+
+            </a>
+
+        </li>
+
+    </ul>
+
+
+
+</nav>
+
+<section></section>
+
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,207 @@
+<!-- <div class="container">
+    <h1 style="text-align: center;padding-top: 25px;">User Registration</h1>
+    <br>
+    <div class="row">
+        <form [formGroup]='RegisterForm'>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-6">
+
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h5>Name</h5>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" formControlName="Name" class="form-control" placeholder="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h5>Place</h5>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" formControlName="Place" class="form-control" placeholder="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h5>Email</h5>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" formControlName="Email" class="form-control" placeholder="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h5>Phone</h5>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" formControlName="Phone" class="form-control" placeholder="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h5>Username</h5>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" formControlName="Username" class="form-control" placeholder="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h5>Password</h5>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" formControlName="Password" class="form-control" placeholder="" />
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-2">
+
+                    </div>
+                    <div class="col-lg-6">
+                        <button type="submit" (click)="OnSubmit()" class="btn btn-danger">Get Registered</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div> -->
+
+<div class="login-box">
+
+    <h2 style="font-family: 'Josefin Sans', sans-serif;">REGISTER</h2>
+
+    <form [formGroup]="RegisterForm">
+
+        <div class="user-box">
+
+            <input type="text" name="" required="" formControlName='Name'>
+
+            <label>Name</label>
+            <div *ngIf="submitted&&RegisterForm.controls.Name.errors" class="text-danger">
+
+                <div *ngIf="submitted&&RegisterForm.controls.Name.errors.required">
+
+                    Enter Name
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="user-box">
+
+            <input type="text" name="" required="" formControlName='Place'>
+
+            <label>Place</label>
+            <div *ngIf="submitted&&RegisterForm.controls.Place.errors" class="text-danger">
+
+                <div *ngIf="submitted&&RegisterForm.controls.Place.errors.required">
+
+                    Enter Place
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="user-box">
+
+            <input type="email" name="" required="" formControlName='Email'>
+
+            <label>Email</label>
+            <div *ngIf="submitted&&RegisterForm.controls.Email.errors" class="text-danger">
+
+                <div *ngIf="submitted&&RegisterForm.controls.Email.errors.required">
+
+                    Enter Email
+
+                </div>
+
+                <div *ngIf="submitted&&RegisterForm.controls.Email.errors.email">
+
+                    Invalid Email
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="user-box">
+
+            <input type="text" name="" required="" formControlName='Phone'>
+
+            <label>Phone</label>
+            <div *ngIf="submitted&&RegisterForm.controls.Phone.errors" class="text-danger">
+
+                <div *ngIf="submitted&&RegisterForm.controls.Phone.errors.required">
+
+                    Enter Phone Number
+
+                </div>
+
+                <div *ngIf="submitted&&RegisterForm.controls.Phone.errors.pattern" class="text-danger">
+
+                    Please Enter 10 digit Phone Number.
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="user-box">
+
+            <input type="text" name="" required="" formControlName='Username'>
+
+            <label>Username</label>
+            <div *ngIf="submitted&&RegisterForm.controls.Username.errors" class="text-danger">
+
+                <div *ngIf="submitted&&RegisterForm.controls.Username.errors.required">
+
+                    Enter UserName
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="user-box">
+
+            <input type="password" name="" required="" formControlName='Password'>
+
+            <label>Password</label>
+            <div *ngIf="submitted&&RegisterForm.controls.Password.errors" class="text-danger">
+
+                <div *ngIf="submitted&&RegisterForm.controls.Password.errors.required">
+
+                    Enter Password
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div>
+
+        <button  type="submit" rounded="true" (click)="OnSubmit()"><span></span>
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>REGISTER</button>
+
+        </div>
+
+    </form>
+
+</div>
+
+
